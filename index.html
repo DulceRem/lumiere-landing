@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubre Lumière, cuidado facial inspirado en la naturaleza. Productos para una rutina de belleza natural.">
+  <meta name="theme-color" content="#f7f3eb">
+  <title>Lumière | Belleza natural</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header" id="inicio">
+    <nav class="navbar container">
+      <a class="logo" href="#inicio">
+        <span class="logo-icon">✳</span>
+        <span>Lumière<small>BELLEZA NATURAL</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+      </ul>
+
+      <a class="cart-link" href="#productos" aria-label="Ver productos">
+        <span>♡</span><span class="cart-count" id="cartCount">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">CUIDADO FACIAL NATURAL</p>
+          <h1>Tu piel, nuestra mayor <em>inspiración.</em></h1>
+          <p class="hero-description">
+            Descubre el poder de la naturaleza en cada producto.
+            Cuida tu piel con una rutina que te haga sentir bien por dentro y por fuera.
+          </p>
+          <a href="#productos" class="button button-primary">Explora nuestra línea <span>→</span></a>
+          <div class="hero-note"><span>✳</span> Un momento para ti, todos los días.</div>
+        </div>
+
+        <div class="hero-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1100&q=85"
+            alt="Productos de cuidado facial sobre una superficie natural"
+          >
+          <div class="image-label">Belleza real,<br><em>rituales conscientes.</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits-strip" id="beneficios">
+      <div class="container benefits-grid">
+        <article class="benefit reveal">
+          <span class="benefit-icon">♧</span>
+          <h3>Inspirados en la naturaleza</h3>
+          <p>Ingredientes seleccionados cuidadosamente.</p>
+        </article>
+        <article class="benefit reveal">
+          <span class="benefit-icon">✧</span>
+          <h3>Tu piel, tu prioridad</h3>
+          <p>Rutinas sencillas para cuidarte cada día.</p>
+        </article>
+        <article class="benefit reveal">
+          <span class="benefit-icon">♡</span>
+          <h3>Bienestar diario</h3>
+          <p>Convierte tu cuidado en un momento especial.</p>
+        </article>
+        <article class="benefit reveal">
+          <span class="benefit-icon">⌁</span>
+          <h3>Envíos nacionales</h3>
+          <p>Recibe tus favoritos en la puerta de tu casa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="products section-padding" id="productos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">TU RITUAL, A TU MANERA</p>
+            <h2>Pequeños detalles,<br><em>grandes momentos.</em></h2>
+          </div>
+          <p>Encuentra ese producto que convierte tu rutina diaria en un momento de calma y bienestar.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <div class="product-image">
+              <span class="product-tag">FAVORITO</span>
+              <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=700&q=85" alt="Sérum facial en frasco de vidrio">
+              <button class="quick-add" data-product="Sérum iluminador" aria-label="Añadir sérum al carrito">+</button>
+            </div>
+            <div class="product-info">
+              <div><h3>Sérum iluminador</h3><p>Una sensación fresca y ligera.</p></div>
+              <strong>$699 MXN</strong>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=85" alt="Crema facial en envase minimalista">
+              <button class="quick-add" data-product="Crema hidratante" aria-label="Añadir crema al carrito">+</button>
+            </div>
+            <div class="product-info">
+              <div><h3>Crema hidratante</h3><p>Suavidad para tu rutina diaria.</p></div>
+              <strong>$799 MXN</strong>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-image">
+              <span class="product-tag">ESENCIAL</span>
+              <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=700&q=85" alt="Producto cosmético para cuidado de la piel">
+              <button class="quick-add" data-product="Limpiador facial" aria-label="Añadir limpiador al carrito">+</button>
+            </div>
+            <div class="product-info">
+              <div><h3>Limpiador facial</h3><p>Limpieza suave todos los días.</p></div>
+              <strong>$499 MXN</strong>
+            </div>
+          </article>
+        </div>
+        <p class="demo-note">Precios e inventario ilustrativos para esta demostración.</p>
+      </div>
+    </section>
+
+    <section class="about" id="nosotros">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=1000&q=85" alt="Cuidado facial y belleza natural">
+      </div>
+      <div class="about-copy reveal">
+        <p class="eyebrow">LA ESENCIA DE LUMIÈRE</p>
+        <h2>Más que cuidado,<br><em>un momento para ti.</em></h2>
+        <p>Creemos que cuidarte no tiene que ser complicado. Lumière nace de la idea de disfrutar los pequeños rituales y encontrar belleza en lo cotidiano.</p>
+        <p>Creamos una experiencia de cuidado personal donde la sencillez, la calma y el bienestar son protagonistas.</p>
+        <a class="text-link" href="#beneficios">Conoce nuestra filosofía <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="testimonials section-padding" id="testimonios">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">PALABRAS QUE NOS INSPIRAN</p>
+            <h2>Historias de <em>bienestar.</em></h2>
+          </div>
+          <div class="testimonial-controls">
+            <button id="prevReview" aria-label="Testimonio anterior">←</button>
+            <button id="nextReview" aria-label="Siguiente testimonio">→</button>
+          </div>
+        </div>
+
+        <div class="testimonial-window">
+          <div class="testimonial-track" id="testimonialTrack">
+            <article class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <blockquote>“Mi rutina ahora es ese pequeño momento del día que dedico solo para mí.”</blockquote>
+              <p class="reviewer">Ana Rodríguez <span>Clienta</span></p>
+            </article>
+            <article class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <blockquote>“Me encanta la presentación de los productos y lo sencillo que es integrarlos a mi rutina.”</blockquote>
+              <p class="reviewer">Valeria Torres <span>Clienta</span></p>
+            </article>
+            <article class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <blockquote>“El pedido llegó muy bien presentado. Se siente como regalarte algo especial.”</blockquote>
+              <p class="reviewer">Daniela López <span>Clienta</span></p>
+            </article>
+          </div>
+        </div>
+        <p class="demo-note">Testimonios ficticios creados con fines de demostración.</p>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container newsletter-content reveal">
+        <div>
+          <p class="eyebrow">UNA PAUSA PARA TI</p>
+          <h2>Un poco de calma<br>en tu bandeja de entrada.</h2>
+          <p>Suscríbete para recibir novedades, consejos de cuidado y noticias de Lumière.</p>
+        </div>
+        <form id="newsletterForm" class="newsletter-form">
+          <label class="sr-only" for="email">Tu correo electrónico</label>
+          <input type="email" id="email" placeholder="Tu correo electrónico" required>
+          <button type="submit">Quiero recibir novedades →</button>
+          <p id="formMessage" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <a class="logo footer-logo" href="#inicio">
+        <span class="logo-icon">✳</span>
+        <span>Lumière<small>BELLEZA NATURAL</small></span>
+      </a>
+      <p>Encuentra belleza en tus pequeños rituales.</p>
+      <div class="footer-links">
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nuestra historia</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="mailto:hola@lumiere.example">Contacto</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="currentYear"></span> Lumière. Proyecto de demostración.</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
